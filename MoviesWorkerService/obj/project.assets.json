@@ -66,13 +66,6 @@
           "lib/netstandard2.1/Grpc.Net.Common.dll": {}
         }
       },
-      "Grpc.Tools/2.31.0": {
-        "type": "package",
-        "build": {
-          "build/Grpc.Tools.props": {},
-          "build/Grpc.Tools.targets": {}
-        }
-      },
       "Microsoft.Extensions.Configuration/3.1.7": {
         "type": "package",
         "dependencies": {
@@ -531,6 +524,20 @@
             "rid": "win"
           }
         }
+      },
+      "MoviesServiceClient/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Google.Protobuf": "3.13.0",
+          "Grpc.Net.ClientFactory": "2.31.0"
+        },
+        "compile": {
+          "bin/placeholder/MoviesServiceClient.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MoviesServiceClient.dll": {}
+        }
       }
     }
   },
@@ -618,54 +625,6 @@
         "lib/netstandard2.1/Grpc.Net.Common.pdb",
         "lib/netstandard2.1/Grpc.Net.Common.xml",
         "packageIcon.png"
-      ]
-    },
-    "Grpc.Tools/2.31.0": {
-      "sha512": "WldXuoWSSWH+Q+tVDnKF5jHNiet07NQ/U6dFiCAzcj9TeR73se8hiFkxgaZloR0EvswwEbnswsuiT9MVk+jndQ==",
-      "type": "package",
-      "path": "grpc.tools/2.31.0",
-      "hasTools": true,
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "build/Grpc.Tools.props",
-        "build/Grpc.Tools.targets",
-        "build/_grpc/Grpc.CSharp.xml",
-        "build/_grpc/_Grpc.Tools.props",
-        "build/_grpc/_Grpc.Tools.targets",
-        "build/_protobuf/Google.Protobuf.Tools.props",
-        "build/_protobuf/Google.Protobuf.Tools.targets",
-        "build/_protobuf/Protobuf.CSharp.xml",
-        "build/_protobuf/net45/Protobuf.MSBuild.dll",
-        "build/_protobuf/net45/Protobuf.MSBuild.pdb",
-        "build/_protobuf/netstandard1.3/Protobuf.MSBuild.dll",
-        "build/_protobuf/netstandard1.3/Protobuf.MSBuild.pdb",
-        "build/native/Grpc.Tools.props",
-        "build/native/include/google/protobuf/any.proto",
-        "build/native/include/google/protobuf/api.proto",
-        "build/native/include/google/protobuf/descriptor.proto",
-        "build/native/include/google/protobuf/duration.proto",
-        "build/native/include/google/protobuf/empty.proto",
-        "build/native/include/google/protobuf/field_mask.proto",
-        "build/native/include/google/protobuf/source_context.proto",
-        "build/native/include/google/protobuf/struct.proto",
-        "build/native/include/google/protobuf/timestamp.proto",
-        "build/native/include/google/protobuf/type.proto",
-        "build/native/include/google/protobuf/wrappers.proto",
-        "grpc.tools.2.31.0.nupkg.sha512",
-        "grpc.tools.nuspec",
-        "tools/linux_x64/grpc_csharp_plugin",
-        "tools/linux_x64/protoc",
-        "tools/linux_x86/grpc_csharp_plugin",
-        "tools/linux_x86/protoc",
-        "tools/macosx_x64/grpc_csharp_plugin",
-        "tools/macosx_x64/protoc",
-        "tools/macosx_x86/grpc_csharp_plugin",
-        "tools/macosx_x86/protoc",
-        "tools/windows_x64/grpc_csharp_plugin.exe",
-        "tools/windows_x64/protoc.exe",
-        "tools/windows_x86/grpc_csharp_plugin.exe",
-        "tools/windows_x86/protoc.exe"
       ]
     },
     "Microsoft.Extensions.Configuration/3.1.7": {
@@ -1380,15 +1339,18 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "MoviesServiceClient/1.0.0": {
+      "type": "project",
+      "path": "../MoviesServiceClient/MoviesServiceClient.csproj",
+      "msbuildProject": "../MoviesServiceClient/MoviesServiceClient.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "Google.Protobuf >= 3.13.0",
-      "Grpc.Net.ClientFactory >= 2.31.0",
-      "Grpc.Tools >= 2.31.0",
       "Microsoft.Extensions.Hosting >= 3.1.7",
       "Microsoft.Extensions.Http >= 3.1.7",
+      "MoviesServiceClient >= 1.0.0",
       "Newtonsoft.Json >= 12.0.3"
     ]
   },
@@ -1421,7 +1383,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\robi-\\Source\\Repos\\NewMoviesRater\\MoviesServiceClient\\MoviesServiceClient.csproj": {
+              "projectPath": "C:\\Users\\robi-\\Source\\Repos\\NewMoviesRater\\MoviesServiceClient\\MoviesServiceClient.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -1433,20 +1399,6 @@
     "frameworks": {
       "netcoreapp3.1": {
         "dependencies": {
-          "Google.Protobuf": {
-            "target": "Package",
-            "version": "[3.13.0, )"
-          },
-          "Grpc.Net.ClientFactory": {
-            "target": "Package",
-            "version": "[2.31.0, )"
-          },
-          "Grpc.Tools": {
-            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-            "suppressParent": "All",
-            "target": "Package",
-            "version": "[2.31.0, )"
-          },
           "Microsoft.Extensions.Hosting": {
             "target": "Package",
             "version": "[3.1.7, )"

@@ -48,3 +48,5 @@ C:\Users\robi-\Source\Repos\NewMoviesRater\MoviesWorkerService\obj\Debug\netcore
 C:\Users\robi-\Source\Repos\NewMoviesRater\MoviesWorkerService\obj\Debug\netcoreapp3.1\MoviesWorkerService.dll
 C:\Users\robi-\Source\Repos\NewMoviesRater\MoviesWorkerService\obj\Debug\netcoreapp3.1\MoviesWorkerService.pdb
 C:\Users\robi-\Source\Repos\NewMoviesRater\MoviesWorkerService\obj\Debug\netcoreapp3.1\MoviesWorkerService.genruntimeconfig.cache
+C:\Users\robi-\Source\Repos\NewMoviesRater\MoviesWorkerService\bin\Debug\netcoreapp3.1\MoviesServiceClient.dll
+C:\Users\robi-\Source\Repos\NewMoviesRater\MoviesWorkerService\bin\Debug\netcoreapp3.1\MoviesServiceClient.pdb

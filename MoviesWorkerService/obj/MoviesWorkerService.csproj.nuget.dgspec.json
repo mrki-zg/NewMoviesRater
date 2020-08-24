@@ -4,14 +4,14 @@
     "C:\\Users\\robi-\\Source\\Repos\\NewMoviesRater\\MoviesWorkerService\\MoviesWorkerService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\robi-\\Source\\Repos\\NewMoviesRater\\MoviesWorkerService\\MoviesWorkerService.csproj": {
+    "C:\\Users\\robi-\\Source\\Repos\\NewMoviesRater\\MoviesServiceClient\\MoviesServiceClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\robi-\\Source\\Repos\\NewMoviesRater\\MoviesWorkerService\\MoviesWorkerService.csproj",
-        "projectName": "MoviesWorkerService",
-        "projectPath": "C:\\Users\\robi-\\Source\\Repos\\NewMoviesRater\\MoviesWorkerService\\MoviesWorkerService.csproj",
+        "projectUniqueName": "C:\\Users\\robi-\\Source\\Repos\\NewMoviesRater\\MoviesServiceClient\\MoviesServiceClient.csproj",
+        "projectName": "MoviesServiceClient",
+        "projectPath": "C:\\Users\\robi-\\Source\\Repos\\NewMoviesRater\\MoviesServiceClient\\MoviesServiceClient.csproj",
         "packagesPath": "C:\\Users\\robi-\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\robi-\\Source\\Repos\\NewMoviesRater\\MoviesWorkerService\\obj\\",
+        "outputPath": "C:\\Users\\robi-\\Source\\Repos\\NewMoviesRater\\MoviesServiceClient\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -54,7 +54,68 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[2.31.0, )"
-            },
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\robi-\\Source\\Repos\\NewMoviesRater\\MoviesWorkerService\\MoviesWorkerService.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\robi-\\Source\\Repos\\NewMoviesRater\\MoviesWorkerService\\MoviesWorkerService.csproj",
+        "projectName": "MoviesWorkerService",
+        "projectPath": "C:\\Users\\robi-\\Source\\Repos\\NewMoviesRater\\MoviesWorkerService\\MoviesWorkerService.csproj",
+        "packagesPath": "C:\\Users\\robi-\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\robi-\\Source\\Repos\\NewMoviesRater\\MoviesWorkerService\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\robi-\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\robi-\\Source\\Repos\\NewMoviesRater\\MoviesServiceClient\\MoviesServiceClient.csproj": {
+                "projectPath": "C:\\Users\\robi-\\Source\\Repos\\NewMoviesRater\\MoviesServiceClient\\MoviesServiceClient.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
             "Microsoft.Extensions.Hosting": {
               "target": "Package",
               "version": "[3.1.7, )"

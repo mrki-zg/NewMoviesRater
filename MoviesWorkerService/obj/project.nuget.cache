@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "F36ddjRLOLxLqp34kyjKJgEBL6yA3RtfF6ZCcNTsLMNKZlqgIc6shdNHNkucvD4JBvb5yp2zvlpOBIDBr6XssA==",
+  "dgSpecHash": "58LHXv9rMS7zutaIgf17znf6vTBPqwqd0JsD7+WBHu5z/jh+QF7dOFYiGhvb0rb3SS5KDww9tcshZ/6boFZdPg==",
   "success": true,
   "projectFilePath": "C:\\Users\\robi-\\Source\\Repos\\NewMoviesRater\\MoviesWorkerService\\MoviesWorkerService.csproj",
   "expectedPackageFiles": [
@@ -9,7 +9,6 @@
     "C:\\Users\\robi-\\.nuget\\packages\\grpc.net.client\\2.31.0\\grpc.net.client.2.31.0.nupkg.sha512",
     "C:\\Users\\robi-\\.nuget\\packages\\grpc.net.clientfactory\\2.31.0\\grpc.net.clientfactory.2.31.0.nupkg.sha512",
     "C:\\Users\\robi-\\.nuget\\packages\\grpc.net.common\\2.31.0\\grpc.net.common.2.31.0.nupkg.sha512",
-    "C:\\Users\\robi-\\.nuget\\packages\\grpc.tools\\2.31.0\\grpc.tools.2.31.0.nupkg.sha512",
     "C:\\Users\\robi-\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.7\\microsoft.extensions.configuration.3.1.7.nupkg.sha512",
     "C:\\Users\\robi-\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.1.7\\microsoft.extensions.configuration.abstractions.3.1.7.nupkg.sha512",
     "C:\\Users\\robi-\\.nuget\\packages\\microsoft.extensions.configuration.binder\\3.1.7\\microsoft.extensions.configuration.binder.3.1.7.nupkg.sha512",

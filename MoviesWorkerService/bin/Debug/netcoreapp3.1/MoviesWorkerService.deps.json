@@ -8,11 +8,9 @@
     ".NETCoreApp,Version=v3.1": {
       "MoviesWorkerService/1.0.0": {
         "dependencies": {
-          "Google.Protobuf": "3.13.0",
-          "Grpc.Net.ClientFactory": "2.31.0",
-          "Grpc.Tools": "2.31.0",
           "Microsoft.Extensions.Hosting": "3.1.7",
           "Microsoft.Extensions.Http": "3.1.7",
+          "MoviesServiceClient": "1.0.0",
           "Newtonsoft.Json": "12.0.3"
         },
         "runtime": {
@@ -78,7 +76,6 @@
           }
         }
       },
-      "Grpc.Tools/2.31.0": {},
       "Microsoft.Extensions.Configuration/3.1.7": {
         "dependencies": {
           "Microsoft.Extensions.Configuration.Abstractions": "3.1.7"
@@ -428,7 +425,16 @@
           "System.Security.Principal.Windows": "4.7.0"
         }
       },
-      "System.Security.Principal.Windows/4.7.0": {}
+      "System.Security.Principal.Windows/4.7.0": {},
+      "MoviesServiceClient/1.0.0": {
+        "dependencies": {
+          "Google.Protobuf": "3.13.0",
+          "Grpc.Net.ClientFactory": "2.31.0"
+        },
+        "runtime": {
+          "MoviesServiceClient.dll": {}
+        }
+      }
     }
   },
   "libraries": {
@@ -471,13 +477,6 @@
       "sha512": "sha512-yJjSulvcJLcS9Q1h7ynJ+hwAp7FDObn7uhbTZGEHb0W1i1QZtRHoYr8JsKcBqBnLmtei0+oy3fef4J6kZzK5yw==",
       "path": "grpc.net.common/2.31.0",
       "hashPath": "grpc.net.common.2.31.0.nupkg.sha512"
-    },
-    "Grpc.Tools/2.31.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-WldXuoWSSWH+Q+tVDnKF5jHNiet07NQ/U6dFiCAzcj9TeR73se8hiFkxgaZloR0EvswwEbnswsuiT9MVk+jndQ==",
-      "path": "grpc.tools/2.31.0",
-      "hashPath": "grpc.tools.2.31.0.nupkg.sha512"
     },
     "Microsoft.Extensions.Configuration/3.1.7": {
       "type": "package",
@@ -723,6 +722,11 @@
       "sha512": "sha512-ojD0PX0XhneCsUbAZVKdb7h/70vyYMDYs85lwEI+LngEONe/17A0cFaRFqZU+sOEidcVswYWikYOQ9PPfjlbtQ==",
       "path": "system.security.principal.windows/4.7.0",
       "hashPath": "system.security.principal.windows.4.7.0.nupkg.sha512"
+    },
+    "MoviesServiceClient/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }
