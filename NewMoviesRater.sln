@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoviesWorkerService", "MoviesWorkerService\MoviesWorkerService.csproj", "{BDD741CC-D53D-44DF-9194-1600A2BE9487}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MoviesWorkerService", "MoviesWorkerService\MoviesWorkerService.csproj", "{BDD741CC-D53D-44DF-9194-1600A2BE9487}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoviesService", "MoviesService\MoviesService.csproj", "{54A41FD8-AB15-4E4A-9524-1CE76BEA18F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MoviesService", "MoviesService\MoviesService.csproj", "{54A41FD8-AB15-4E4A-9524-1CE76BEA18F9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NewMoviesRater", "NewMoviesRater\NewMoviesRater.csproj", "{C90AE747-363C-4EC9-A269-2F7F80FD31AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoviesServiceClient", "MoviesServiceClient\MoviesServiceClient.csproj", "{D94FFAD6-AA51-414E-8F65-C6E5311FBABF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{54A41FD8-AB15-4E4A-9524-1CE76BEA18F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{54A41FD8-AB15-4E4A-9524-1CE76BEA18F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{54A41FD8-AB15-4E4A-9524-1CE76BEA18F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C90AE747-363C-4EC9-A269-2F7F80FD31AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C90AE747-363C-4EC9-A269-2F7F80FD31AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C90AE747-363C-4EC9-A269-2F7F80FD31AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C90AE747-363C-4EC9-A269-2F7F80FD31AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D94FFAD6-AA51-414E-8F65-C6E5311FBABF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D94FFAD6-AA51-414E-8F65-C6E5311FBABF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D94FFAD6-AA51-414E-8F65-C6E5311FBABF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D94FFAD6-AA51-414E-8F65-C6E5311FBABF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

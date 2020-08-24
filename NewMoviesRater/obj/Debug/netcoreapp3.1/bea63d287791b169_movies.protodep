@@ -1,0 +1,3 @@
+obj\Debug\netcoreapp3.1/Movies.cs \
+obj\Debug\netcoreapp3.1/MoviesGrpc.cs: C:/Users/robi-/.nuget/packages/grpc.tools/2.31.0/build/native/include/google/protobuf/empty.proto\
+ ../MoviesService/Protos/movies.proto

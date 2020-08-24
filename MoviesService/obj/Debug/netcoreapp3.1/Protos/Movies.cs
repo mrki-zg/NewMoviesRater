@@ -27,10 +27,11 @@ namespace MoviesService {
             "ChNQcm90b3MvbW92aWVzLnByb3RvEgZtb3ZpZXMaG2dvb2dsZS9wcm90b2J1",
             "Zi9lbXB0eS5wcm90byI0ChNVcGxvYWRNb3ZpZXNSZXF1ZXN0Eh0KBm1vdmll",
             "cxgBIAMoCzINLm1vdmllcy5Nb3ZpZSI5CgVNb3ZpZRINCgV0aXRsZRgBIAEo",
-            "CRITCgtkZXNjcmlwdGlvbhgCIAEoCRIMCgR5ZWFyGAMgASgFMk0KBk1vdmll",
-            "cxJDCgxVcGxvYWRNb3ZpZXMSGy5tb3ZpZXMuVXBsb2FkTW92aWVzUmVxdWVz",
-            "dBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eUIQqgINTW92aWVzU2VydmljZWIG",
-            "cHJvdG8z"));
+            "CRITCgtkZXNjcmlwdGlvbhgCIAEoCRIMCgR5ZWFyGAMgASgFMokBCgZNb3Zp",
+            "ZXMSQwoMVXBsb2FkTW92aWVzEhsubW92aWVzLlVwbG9hZE1vdmllc1JlcXVl",
+            "c3QaFi5nb29nbGUucHJvdG9idWYuRW1wdHkSOgoPR2V0TW92aWVzU3RyZWFt",
+            "EhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5Gg0ubW92aWVzLk1vdmllMAFCEKoC",
+            "DU1vdmllc1NlcnZpY2ViBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

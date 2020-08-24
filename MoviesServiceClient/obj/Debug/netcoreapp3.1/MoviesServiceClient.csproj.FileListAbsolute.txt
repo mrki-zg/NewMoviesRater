@@ -1,0 +1,9 @@
+C:\Users\robi-\Source\Repos\NewMoviesRater\MoviesServiceClient\bin\Debug\netcoreapp3.1\MoviesServiceClient.deps.json
+C:\Users\robi-\Source\Repos\NewMoviesRater\MoviesServiceClient\bin\Debug\netcoreapp3.1\MoviesServiceClient.dll
+C:\Users\robi-\Source\Repos\NewMoviesRater\MoviesServiceClient\obj\Debug\netcoreapp3.1\MoviesServiceClient.AssemblyInfoInputs.cache
+C:\Users\robi-\Source\Repos\NewMoviesRater\MoviesServiceClient\obj\Debug\netcoreapp3.1\MoviesServiceClient.AssemblyInfo.cs
+C:\Users\robi-\Source\Repos\NewMoviesRater\MoviesServiceClient\obj\Debug\netcoreapp3.1\MoviesServiceClient.csprojAssemblyReference.cache
+C:\Users\robi-\Source\Repos\NewMoviesRater\MoviesServiceClient\bin\Debug\netcoreapp3.1\MoviesServiceClient.pdb
+C:\Users\robi-\Source\Repos\NewMoviesRater\MoviesServiceClient\obj\Debug\netcoreapp3.1\MoviesServiceClient.csproj.CoreCompileInputs.cache
+C:\Users\robi-\Source\Repos\NewMoviesRater\MoviesServiceClient\obj\Debug\netcoreapp3.1\MoviesServiceClient.dll
+C:\Users\robi-\Source\Repos\NewMoviesRater\MoviesServiceClient\obj\Debug\netcoreapp3.1\MoviesServiceClient.pdb

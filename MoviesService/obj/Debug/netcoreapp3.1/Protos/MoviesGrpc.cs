@@ -14,6 +14,7 @@ namespace MoviesService {
 
     static readonly grpc::Marshaller<global::MoviesService.UploadMoviesRequest> __Marshaller_movies_UploadMoviesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::MoviesService.UploadMoviesRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Google.Protobuf.WellKnownTypes.Empty> __Marshaller_google_protobuf_Empty = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Protobuf.WellKnownTypes.Empty.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::MoviesService.Movie> __Marshaller_movies_Movie = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::MoviesService.Movie.Parser.ParseFrom);
 
     static readonly grpc::Method<global::MoviesService.UploadMoviesRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_UploadMovies = new grpc::Method<global::MoviesService.UploadMoviesRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
         grpc::MethodType.Unary,
@@ -21,6 +22,13 @@ namespace MoviesService {
         "UploadMovies",
         __Marshaller_movies_UploadMoviesRequest,
         __Marshaller_google_protobuf_Empty);
+
+    static readonly grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::MoviesService.Movie> __Method_GetMoviesStream = new grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::MoviesService.Movie>(
+        grpc::MethodType.ServerStreaming,
+        __ServiceName,
+        "GetMoviesStream",
+        __Marshaller_google_protobuf_Empty,
+        __Marshaller_movies_Movie);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -37,6 +45,11 @@ namespace MoviesService {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
+      public virtual global::System.Threading.Tasks.Task GetMoviesStream(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::IServerStreamWriter<global::MoviesService.Movie> responseStream, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
     }
 
     /// <summary>Creates service definition that can be registered with a server</summary>
@@ -44,7 +57,8 @@ namespace MoviesService {
     public static grpc::ServerServiceDefinition BindService(MoviesBase serviceImpl)
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
-          .AddMethod(__Method_UploadMovies, serviceImpl.UploadMovies).Build();
+          .AddMethod(__Method_UploadMovies, serviceImpl.UploadMovies)
+          .AddMethod(__Method_GetMoviesStream, serviceImpl.GetMoviesStream).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
@@ -54,6 +68,7 @@ namespace MoviesService {
     public static void BindService(grpc::ServiceBinderBase serviceBinder, MoviesBase serviceImpl)
     {
       serviceBinder.AddMethod(__Method_UploadMovies, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::MoviesService.UploadMoviesRequest, global::Google.Protobuf.WellKnownTypes.Empty>(serviceImpl.UploadMovies));
+      serviceBinder.AddMethod(__Method_GetMoviesStream, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::Google.Protobuf.WellKnownTypes.Empty, global::MoviesService.Movie>(serviceImpl.GetMoviesStream));
     }
 
   }

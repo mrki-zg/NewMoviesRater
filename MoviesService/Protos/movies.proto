@@ -8,6 +8,7 @@ import "google/protobuf/empty.proto";
 
 service Movies {
 	rpc UploadMovies(UploadMoviesRequest) returns (.google.protobuf.Empty);
+	rpc GetMoviesStream(.google.protobuf.Empty) returns (stream Movie);
 }
 
 message UploadMoviesRequest {
