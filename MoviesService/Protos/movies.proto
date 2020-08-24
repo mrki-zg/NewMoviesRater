@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option csharp_namespace = "MoviesService";
+
+package movies;
+
+import "google/protobuf/empty.proto";
+
+service Movies {
+	rpc UploadMovies(UploadMoviesRequest) returns (.google.protobuf.Empty);
+}
+
+message UploadMoviesRequest {
+	repeated Movie movies = 1;
+}
+
+message Movie {
+	string title = 1;
+	string description = 2;
+	int32 year = 3;
+}

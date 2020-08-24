@@ -2,9 +2,11 @@ using System;
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
+using Grpc.Net.Client;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using MoviesService;
 using Newtonsoft.Json.Linq;
 
 namespace MoviesWorkerService
@@ -17,7 +19,9 @@ namespace MoviesWorkerService
         private readonly ILogger<MoviesLoaderService> _logger;
         private readonly IHttpClientFactory _httpClientFactory;
         private Timer _timer;
+
         private string _apiKey;
+        private string _moviesServiceAddress;
 
         public MoviesLoaderService(ILogger<MoviesLoaderService> logger, IConfiguration configuration, IHttpClientFactory httpClientFactory)
         {
@@ -25,6 +29,7 @@ namespace MoviesWorkerService
             _httpClientFactory = httpClientFactory;
 
             _apiKey = configuration["AppSettings:OMDbApiKey"];
+            _moviesServiceAddress = configuration["AppSettings:MoviesServiceAddress"];
         }
 
         public Task StartAsync(CancellationToken cancellationToken)
@@ -56,6 +61,8 @@ namespace MoviesWorkerService
 
             var client = _httpClientFactory.CreateClient();
 
+            var moviesUploadRequest = new UploadMoviesRequest();
+
             var now = DateTime.Now;
             var randomGen = new Random(now.Hour + now.Minute + now.Second);
             for (int i = 0; i < LoadLimit; i++)
@@ -77,12 +84,25 @@ namespace MoviesWorkerService
 
                 if (jsonObj["Type"]?.ToString() == "movie")
                 {
-                    //TODO
+                    moviesUploadRequest.Movies.Add(new Movie
+                    {
+                        Title = jsonObj["Title"]?.ToString(),
+                        Description = jsonObj["Plot"]?.ToString(),
+                        Year = jsonObj.GetValue("Year").Value<int>()
+                    });
                     _logger.LogInformation(result);
                 }
             }
 
             _logger.LogInformation("Loaded movies.");
+
+            using (var channel = GrpcChannel.ForAddress(_moviesServiceAddress))
+            {
+                var moviesClient = new Movies.MoviesClient(channel);
+                moviesClient.UploadMovies(moviesUploadRequest);
+            }
+
+            _logger.LogInformation("Persisted movies to service.");
         }
     }
 }

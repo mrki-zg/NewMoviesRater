@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\robi-\\source\\repos\\NewMoviesRater\\MoviesWorkerService\\MoviesWorkerService.csproj": {}
+    "C:\\Users\\robi-\\Source\\Repos\\NewMoviesRater\\MoviesWorkerService\\MoviesWorkerService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\robi-\\source\\repos\\NewMoviesRater\\MoviesWorkerService\\MoviesWorkerService.csproj": {
+    "C:\\Users\\robi-\\Source\\Repos\\NewMoviesRater\\MoviesWorkerService\\MoviesWorkerService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\robi-\\source\\repos\\NewMoviesRater\\MoviesWorkerService\\MoviesWorkerService.csproj",
+        "projectUniqueName": "C:\\Users\\robi-\\Source\\Repos\\NewMoviesRater\\MoviesWorkerService\\MoviesWorkerService.csproj",
         "projectName": "MoviesWorkerService",
-        "projectPath": "C:\\Users\\robi-\\source\\repos\\NewMoviesRater\\MoviesWorkerService\\MoviesWorkerService.csproj",
+        "projectPath": "C:\\Users\\robi-\\Source\\Repos\\NewMoviesRater\\MoviesWorkerService\\MoviesWorkerService.csproj",
         "packagesPath": "C:\\Users\\robi-\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\robi-\\source\\repos\\NewMoviesRater\\MoviesWorkerService\\obj\\",
+        "outputPath": "C:\\Users\\robi-\\Source\\Repos\\NewMoviesRater\\MoviesWorkerService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -41,6 +41,20 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Google.Protobuf": {
+              "target": "Package",
+              "version": "[3.13.0, )"
+            },
+            "Grpc.Net.ClientFactory": {
+              "target": "Package",
+              "version": "[2.31.0, )"
+            },
+            "Grpc.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.31.0, )"
+            },
             "Microsoft.Extensions.Hosting": {
               "target": "Package",
               "version": "[3.1.7, )"
